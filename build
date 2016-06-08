@@ -1,0 +1,1 @@
+docker build -t rawmind/alpine-jvm8:$(cat version) .

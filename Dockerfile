@@ -1,10 +1,10 @@
-FROM rawmind/alpine-monit:0.3.3-2
+FROM rawmind/alpine-monit:0.5.18
 MAINTAINER Raul Sanchez <rawmind@gmail.com>
 
 #Set environment
 ENV JAVA_VERSION_MAJOR=8 \
-    JAVA_VERSION_MINOR=74 \
-    JAVA_VERSION_BUILD=02 \
+    JAVA_VERSION_MINOR=92 \
+    JAVA_VERSION_BUILD=14 \
     JAVA_PACKAGE=jre \
     ALPINE_GLIBC_BASE_URL="https://github.com/andyshinn/alpine-pkg-glibc/releases/download" \
     ALPINE_GLIBC_PACKAGE_VERSION="2.23-r1" 
