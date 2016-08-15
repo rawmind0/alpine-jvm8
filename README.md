@@ -11,7 +11,7 @@ docker build -t rawmind/alpine-jvm8:<version> .
 
 ## Versions
 
-- `1.8.92-6` [(Dockerfile)](https://github.com/rawmind0/alpine-jvm8/blob/1.8.92-5/Dockerfile)
+- `1.8.92-7` [(Dockerfile)](https://github.com/rawmind0/alpine-jvm8/blob/1.8.92-7/Dockerfile)
 - `1.8.74-1` [(Dockerfile)](https://github.com/rawmind0/alpine-jvm8/blob/1.8.74-1/Dockerfile)
 
 
