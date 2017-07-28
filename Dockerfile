@@ -6,6 +6,7 @@ ENV JAVA_VERSION_MAJOR=8 \
     JAVA_VERSION_MINOR=144 \
     JAVA_VERSION_BUILD=01 \
     JAVA_PACKAGE=jre \
+    JAVA_HASH="090f390dda5b47b9b721c7dfaa008135" \
     ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases/download" \
     ALPINE_GLIBC_PACKAGE_VERSION="2.25-r0" 
 ENV JAVA_HOME=/opt/${JAVA_PACKAGE} \
@@ -24,7 +25,7 @@ RUN cd /tmp \
   && echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf \
   && apk del glibc-i18n && apk del build-dependencies \
   && curl -jksSLH "Cookie: oraclelicense=accept-securebackup-cookie"\
-  http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz \
+  http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/${JAVA_HASH}/${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz \
   | gunzip -c - | tar -xf - -C /opt \
   && ln -s /opt/${JAVA_PACKAGE}1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR} ${JAVA_HOME} \
   && rm -rf ${JAVA_HOME}/*src.zip \
