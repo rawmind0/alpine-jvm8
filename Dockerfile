@@ -3,10 +3,10 @@ MAINTAINER Raul Sanchez <rawmind@gmail.com>
 
 #Set environment
 ENV JAVA_VERSION_MAJOR=8 \
-    JAVA_VERSION_MINOR=152 \
-    JAVA_VERSION_BUILD=16 \
+    JAVA_VERSION_MINOR=181 \
+    JAVA_VERSION_BUILD=13 \
     JAVA_PACKAGE=jre \
-    JAVA_HASH="aa0333dd3019491ca4f6ddbe78cdb6d0" \
+    JAVA_HASH="96a7b8442fe848ef90c96a2fad6ed6d1" \
     ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases/download" \
     ALPINE_GLIBC_PACKAGE_VERSION="2.26-r0" 
 ENV JAVA_HOME=/opt/${JAVA_PACKAGE} \
